@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Shop</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+        :root {
+            --border : 0.1px solid #f4f4f4;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .compare_title{
+            text-align: center;
+            font-size: 50px;
+        }
+        .compare_container
+        {
+            max-width:1400px;
+            height: auto;
+            margin: 0 auto;
+            margin-top:80px;
+            background-color: #f1f1f1;
+            display: flex;
+        }
+        .product_info{
+            width: 350px;
+            height:auto;
+            text-transform: uppercase;
+        }
+        .top_info{
+            width: 350px;
+            height: 250px;
+            background-color: #f6f6f6;
+        }
+        .product_info-name{
+            display: flex;
+            align-items: center;
+            border: 0.2px solid #fff;
+        }
+        .product_info-name p{
+            font-weight: 550;
+            text-transform: uppercase;
+            font-size:18px;
+            font-family: sans-serif;
+            color: gray;
+        }
+        .availability,.price,.brand,.partnumber,.barcode,.battery,.batterycapacity,.camera{
+            height: auto;
+            padding: 15px;
+            border: var(--border);
+        }
+        .availability1,.price1,.brand1,.partnumber1,.barcode1,.battery1,.batterycapacity1,.camera1,
+        .availability2,.price2,.brand2,.partnumber2,.barcode2,.battery2,.batterycapacity2,.camera2,
+        .availability3,.price3,.brand3,.partnumber3,.barcode3,.battery3,.batterycapacity3,.camera3{
+            height: auto;
+            padding: 15px;
+            border: var(--border);
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .product_one-name,.product_two-name,.product_three-name{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0.2px solid #fff;
+        }
+        .product_one-img,.product_two-img,.product_three-img{
+            width: 80%;
+            height: 80%;
+        }
+        .product_one-img img,.product_two-img img,.product_three-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .compare_one div:nth-child(even),.compare_two div:nth-child(even),.compare_three div:nth-child(even){
+            background-color: #dddbdb
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="compare_title">Compare</h1>
+        <div class="compare_container">
+            <div class="product_info">
+                <div class="product_info-name top_info">
+                    <p>Product info</p>
+                </div>
+                <div class="availability">
+                    <p>AVAILABILITY</p>
+                </div>
+                <div class="price">
+                    <p>PRICE</p>
+                </div>
+                <div class="brand">
+                    <p>BRAND</p>
+                </div>
+                <div class="partnumber">
+                    <p>PART NUMBER</p>
+                </div>
+                <div class="barcode">
+                    <p>BARCODE</p>
+                </div>
+                <div class="battery">
+                    <p>battery</p>
+                </div>
+                <div class="batterycapacity">
+                    <p>battery capacity</p>
+                </div>
+                <div class="camera">
+                    <p>camera</p>
+                </div>
+            </div>
+            <div class="compare_one">
+                <div class="product_one-name top_info">
+                    <div class="product_one-img">
+                        <img src="./theme1a.png" alt="">
+                    </div>
+                </div>
+                <div class="availability1">
+                    <p>availability</p>
+                </div>
+                <div class="price1">
+                    <p>price</p>
+                </div>
+                <div class="brand1">
+                    <p>brand</p>
+                </div>
+                <div class="partnumber1">
+                    <p>part number</p>
+                </div>
+                <div class="barcode1">
+                    <p>barcode</p>
+                </div>
+                <div class="battery1">
+                    <p>battery</p>
+                </div>
+                <div class="batterycapacity1">
+                    <p>battery capacity</p>
+                </div>
+                <div class="camera1">
+                    <p>camera</p>
+                </div>
+            </div>
+            <div class="compare_two">
+                <div class="product_two-name top_info">
+                    <div class="product_two-img">
+                        <img src="./theme1a.png" alt="">
+                    </div>
+                </div>
+                <div class="availability2">
+                    <p>availability</p>
+                </div>
+                <div class="price2">
+                    <p>price</p>
+                </div>
+                <div class="brand2">
+                    <p>brand</p>
+                </div>
+                <div class="partnumber2">
+                    <p>part number</p>
+                </div>
+                <div class="barcode2">
+                    <p>barcode</p>
+                </div>
+                <div class="battery2">
+                    <p>battery</p>
+                </div>
+                <div class="batterycapacity2">
+                    <p>battery capacity</p>
+                </div>
+                <div class="camera2">
+                    <p>camera</p>
+                </div>
+            </div>
+            <div class="compare_three">
+                <div class="product_three-name top_info">
+                    <div class="product_three-img">
+                        <img src="./theme1a.png" alt="">
+                    </div>
+                </div>
+                <div class="availability3">
+                    <p>availability</p>
+                </div>
+                <div class="price3">
+                    <p>price</p>
+                </div>
+                <div class="brand3">
+                    <p>brand</p>
+                </div>
+                <div class="partnumber3">
+                    <p>part number</p>
+                </div>
+                <div class="barcode3">
+                    <p>barcode</p>
+                </div>
+                <div class="battery3">
+                    <p>battery</p>
+                </div>
+                <div class="batterycapacity3">
+                    <p>battery capacity</p>
+                </div>
+                <div class="camera3">
+                    <p>camera</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
